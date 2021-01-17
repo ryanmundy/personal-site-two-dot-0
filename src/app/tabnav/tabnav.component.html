@@ -1,0 +1,13 @@
+<div class="tabs-container">
+    <div class="tab" routerLink="/dashboard/home" routerLinkActive="active" (click)="changeTab(tabs.HOME)"
+        [ngClass]="{'selected': selectedTab === tabs.HOME}">Home</div>
+    <div class="tab" routerLink="/dashboard/resume" routerLinkActive="active" (click)="changeTab(tabs.RESUME)"
+        [ngClass]="{'selected': selectedTab === tabs.RESUME}">Resume
+    </div>
+    <div class="tab" routerLink="/dashboard/skills" routerLinkActive="active" (click)="changeTab(tabs.SKILLS)"
+        [ngClass]="{'selected': selectedTab === tabs.SKILLS}">Skills
+    </div>
+    <div class="tab" routerLink="/dashboard/contact" routerLinkActive="active" (click)="changeTab(tabs.CONTACT)"
+        [ngClass]="{'selected': selectedTab === tabs.CONTACT}">Contact
+    </div>
+</div>
