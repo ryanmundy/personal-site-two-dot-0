@@ -8,10 +8,11 @@ import { ResumeComponent } from './resume/resume.component';
 import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/dashboard/home', pathMatch: 'full' },
   {
     path: 'dashboard', component: DashboardComponent,
     children: [
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'resume', component: ResumeComponent },
       { path: 'skills', component: SkillsComponent },

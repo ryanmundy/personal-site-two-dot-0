@@ -1,13 +1,26 @@
 .tabs-container{
     background-color: #333333;
-        text-align: right;
-        padding: 1.5rem;
+    text-align: right;
+    padding: 1.5rem;
+    position: relative;
+
+    .signature {
+        position: absolute;
+        top: 2px;
+        left: 35px;
+        cursor: pointer;
+
+         &:focus{
+            outline: none;
+        }
+    }    
 
     .tab {
         color: #D6D6D6;
         display: inline;
         margin: 1rem;
         cursor: pointer;
+        font-size: 20px;
 
         &:focus{
             outline: none;

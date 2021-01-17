@@ -1,4 +1,7 @@
 <div class="tabs-container">
+    <div routerLink="/dashboard/home" routerLinkActive="active" class="signature"><img
+            src="../../assets/images/signature.svg" /></div>
+
     <div class="tab" routerLink="/dashboard/home" routerLinkActive="active" (click)="changeTab(tabs.HOME)"
         [ngClass]="{'selected': selectedTab === tabs.HOME}">Home</div>
     <div class="tab" routerLink="/dashboard/resume" routerLinkActive="active" (click)="changeTab(tabs.RESUME)"
@@ -6,6 +9,9 @@
     </div>
     <div class="tab" routerLink="/dashboard/skills" routerLinkActive="active" (click)="changeTab(tabs.SKILLS)"
         [ngClass]="{'selected': selectedTab === tabs.SKILLS}">Skills
+    </div>
+    <div class="tab" routerLink="/dashboard/portfolio" routerLinkActive="active" (click)="changeTab(tabs.PORTFOLIO)"
+        [ngClass]="{'selected': selectedTab === tabs.PORTFOLIO}">Portfolio
     </div>
     <div class="tab" routerLink="/dashboard/contact" routerLinkActive="active" (click)="changeTab(tabs.CONTACT)"
         [ngClass]="{'selected': selectedTab === tabs.CONTACT}">Contact
