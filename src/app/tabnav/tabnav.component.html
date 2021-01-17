@@ -1,5 +1,5 @@
 <div class="tabs-container">
-    <div routerLink="/dashboard/home" routerLinkActive="active" class="signature"><img
+    <div (click)="changeTab(tabs.HOME)" routerLink="/dashboard/home" routerLinkActive="active" class="signature"><img
             src="../../assets/images/signature.svg" /></div>
 
     <div class="tab" routerLink="/dashboard/home" routerLinkActive="active" (click)="changeTab(tabs.HOME)"
