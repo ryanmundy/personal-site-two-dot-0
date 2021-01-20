@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  onHomeView: boolean = false;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe((val) => {
+      if (this.router.url === '/dashboard/home') {
+        this.onHomeView = true;
+      } else {
+        this.onHomeView = false;
+      }
+    });
+  }
 
   ngOnInit(): void {
   }

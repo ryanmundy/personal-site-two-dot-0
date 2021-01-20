@@ -1,5 +1,5 @@
 .content-pain {
-    height: calc(100vh - 148px);
+    height: calc(100vh - 130px);
 }
 
 .footer-container {
@@ -10,4 +10,6 @@
 .content-container{
     background: url(../../assets/images/portrait.jpg);
     background-position: 0% 50%;
+    background-color: #F9F9F9;
+    background-repeat: no-repeat, no-repeat, repeat-x;
 }

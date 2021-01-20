@@ -1,7 +1,7 @@
 <div>
     <app-tabnav></app-tabnav>
 
-    <div class="content-container">
+    <div [ngClass]="{'content-container': onHomeView}">
         <div class="content-pain">
             <router-outlet></router-outlet>
         </div>
