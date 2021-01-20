@@ -1,11 +1,14 @@
 <div>
     <app-tabnav></app-tabnav>
 
-    <div class="content-pain">
-        <router-outlet></router-outlet>
+    <div class="content-container">
+        <div class="content-pain">
+            <router-outlet></router-outlet>
+        </div>
+
+        <div class="footer-container">
+            <app-footer></app-footer>
+        </div>
     </div>
 
-    <div class="footer-container">
-        <app-footer></app-footer>
-    </div>
 </div>
