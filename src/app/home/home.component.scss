@@ -1,0 +1,49 @@
+.home-container {
+    padding: 6rem;
+
+    .header-text {
+        color: #333333;
+        font-size: 100px;
+        font-weight: 600;
+        cursor: default;
+        -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+        -o-animation: fadein 4s; /* Opera < 12.1 */
+        animation: fadein 4s;
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.terminal-container {
+    width: 500px;
+    height: 130px;
+    padding: 15px;
+    color: #ffffff;
+    background: rgba(51, 51, 51, 0.85);
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 3rem;
+}
