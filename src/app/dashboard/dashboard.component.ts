@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class DashboardComponent implements OnInit {
 
   onHomeView: boolean = false;
+  mobileView: boolean = false;
 
   constructor(private router: Router) {
     this.router.events.subscribe((val) => {
@@ -21,6 +22,7 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.mobileView = window.innerWidth <= 500;
   }
 
 }

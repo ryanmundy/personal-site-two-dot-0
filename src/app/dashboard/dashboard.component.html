@@ -1,13 +1,24 @@
 <div>
-    <app-tabnav></app-tabnav>
+    <app-tabnav *ngIf="!mobileView"></app-tabnav>
 
-    <div [ngClass]="{'content-container': onHomeView}">
-        <div class="content-pain">
-            <router-outlet></router-outlet>
-        </div>
+    <div class="mobile-header" *ngIf="mobileView">
+        <div routerLink="/dashboard/home" routerLinkActive="active" class="signature"><img
+                src="../../assets/images/signature.svg" /></div>
+    </div>
 
-        <div class="footer-container">
-            <app-footer></app-footer>
+
+
+    <div class="view-panel">
+        <img *ngIf="mobileView" class="mobile-portrait" src="../../assets/images/portrait.jpg" />
+
+        <div [ngClass]="{'content-container': onHomeView}">
+            <div class="content-pain">
+                <router-outlet></router-outlet>
+            </div>
+
+            <div class="footer-container">
+                <app-footer></app-footer>
+            </div>
         </div>
     </div>
 
