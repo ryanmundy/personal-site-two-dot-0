@@ -9,7 +9,7 @@
 
 
     <div class="view-panel">
-        <img *ngIf="mobileView" class="mobile-portrait" src="../../assets/images/portrait.jpg" />
+        <img *ngIf="mobileView && onHomeView" class="mobile-portrait" src="../../assets/images/portrait.jpg" />
 
         <div [ngClass]="{'content-container': onHomeView}">
             <div class="content-pain">
