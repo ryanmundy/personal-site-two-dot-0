@@ -3,8 +3,8 @@
 
     <div class="mobile-header" *ngIf="mobileView">
         <img (click)="openCloseMobileMenu()" class="menu-icon" src="../../assets/images/SVG/menu.svg" />
-        <div (click)="selectedTab = tabs.HOME" routerLink="/dashboard/home" routerLinkActive="active" class="signature"><img
-                src="../../assets/images/signature.svg" /></div>
+        <div (click)="selectedTab = tabs.HOME" routerLink="/dashboard/home" routerLinkActive="active" class="signature">
+            <img class="signature-graphic" src="../../assets/images/signature.svg" /></div>
     </div>
 
 
@@ -12,7 +12,7 @@
     <div class="view-panel">
         <img *ngIf="mobileView && onHomeView" class="mobile-portrait" src="../../assets/images/portrait.jpg" />
 
-        <div [ngClass]="{'content-container': onHomeView}">
+        <div class="content-container">
             <div class="content-pain">
                 <router-outlet></router-outlet>
             </div>

@@ -11,9 +11,15 @@
     background: #333333;
     text-align: center;
     cursor: pointer;
+    height: 65px;
 
     &:focus{
         outline: none;
+    }
+
+    .signature-graphic {
+        width: 130px;
+        padding-top: 13px;
     }
 }
 

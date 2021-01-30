@@ -9,3 +9,22 @@ body {
     background-color: #000000;
     margin: 0;
 }
+
+
+ .p-accordion-header-link {
+    border: none !important;
+    background: transparent !important;
+}
+
+.p-accordion-content {
+    background: transparent !important;
+    border: none !important;
+}
+
+
+
+.p-accordion-header-link:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: none !important;
+}
