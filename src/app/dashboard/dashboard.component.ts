@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NAV_TABS } from '../tabnav/tab';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,6 +11,9 @@ export class DashboardComponent implements OnInit {
 
   onHomeView: boolean = false;
   mobileView: boolean = false;
+  mobileMenuOpen: boolean = false;
+  selectedTab = NAV_TABS.HOME;
+  tabs = NAV_TABS;
 
   constructor(private router: Router) {
     this.router.events.subscribe((val) => {
@@ -23,6 +27,15 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.mobileView = window.innerWidth <= 500;
+  }
+
+  openCloseMobileMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
+  changeTab(tab: NAV_TABS) {
+    this.selectedTab = tab;
+    this.openCloseMobileMenu();
   }
 
 }

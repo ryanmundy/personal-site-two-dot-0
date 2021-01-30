@@ -21,6 +21,17 @@
     width: 100%;
 }
 
+.mobile-header{
+    position: relative;
+
+    .menu-icon {
+        position: absolute;
+        width: 50px;
+        top: 5px;
+        left: 5px;
+    }
+}
+
 @media only screen and (min-width: 500px) {
     .content-container{
         background: url(../../assets/images/portrait.jpg);
@@ -45,5 +56,39 @@
     .view-panel {
         height: calc(100vh - 125px);
         overflow: auto;
+    }
+}
+
+.tabs-container{
+    background-color: #333333;
+    text-align: center;
+    padding-top: 4rem;
+    position: relative;
+    height: 100%;
+
+    .close-icon {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 55px;
+    }
+
+    .tab {
+        color: #D6D6D6;
+        cursor: pointer;
+        font-size: 40px;
+        padding: .75rem;
+
+        &:focus{
+            outline: none;
+        }
+
+        &:hover{
+            color: white;
+        }
+
+        &.selected{
+            color: #A5A5A5;
+        }
     }
 }
