@@ -1,10 +1,11 @@
-<div [hidden]="mobileMenuOpen && mobileView">
+<div>
     <app-tabnav *ngIf="!mobileView"></app-tabnav>
 
     <div class="mobile-header" *ngIf="mobileView">
         <img (click)="openCloseMobileMenu()" class="menu-icon" src="../../assets/images/SVG/menu.svg" />
         <div (click)="selectedTab = tabs.HOME" routerLink="/dashboard/home" routerLinkActive="active" class="signature">
-            <img class="signature-graphic" src="../../assets/images/signature.svg" /></div>
+            <img class="signature-graphic" src="../../assets/images/signature.svg" />
+        </div>
     </div>
 
 
@@ -13,19 +14,22 @@
         <img *ngIf="mobileView && onHomeView" class="mobile-portrait" src="../../assets/images/portrait.jpg" />
 
         <div class="content-container">
-            <div class="content-pain">
-                <router-outlet></router-outlet>
+            <div [ngClass]="{'opaque-background': !onHomeView}" class="content-sub-container">
+                <div class="content-pain">
+                    <router-outlet></router-outlet>
+                </div>
+
+                <div class="footer-container">
+                    <app-footer></app-footer>
+                </div>
             </div>
 
-            <div class="footer-container">
-                <app-footer></app-footer>
-            </div>
         </div>
     </div>
 
 </div>
 
-<div class="tabs-container" [hidden]="!mobileMenuOpen && mobileView">
+<div class="tabs-container" *ngIf="mobileMenuOpen && mobileView">
     <img (click)="openCloseMobileMenu()" class="close-icon" src="../../assets/images/SVG/close.svg" />
 
     <div class="tab" routerLink="/dashboard/home" routerLinkActive="active" (click)="changeTab(tabs.HOME)"
