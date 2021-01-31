@@ -5,6 +5,7 @@
     left: 25%;
     height: 100%;
     overflow: auto;
+    padding: 10px;
 
     @media only screen and (min-width: 500px) {
         -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
@@ -25,7 +26,6 @@
     }
 
     ul {
-        padding-top: 1rem;
         padding-left: 0;
         margin: 0;
 
@@ -36,27 +36,4 @@
         }
     }
     
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }

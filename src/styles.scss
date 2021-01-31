@@ -6,7 +6,7 @@ body {
     font-size: 1em;
     overflow: hidden;
     position: fixed;
-    background-color: #000000;
+    background-color: #333333;
     margin: 0;
 }
 
@@ -34,3 +34,35 @@ body {
     padding: 10px;
     text-align: left;
 }    
+
+.tab-header {
+    height: 90px;
+
+    @media only screen and (max-width: 500px) {
+        height: 70px;
+    }
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
