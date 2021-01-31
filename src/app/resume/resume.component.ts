@@ -8,9 +8,26 @@ import { AccordionModule } from 'primeng/accordion';
 })
 export class ResumeComponent implements OnInit {
 
+  accordionIndex = 5;
+  mobileView: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.mobileView = window.innerWidth <= 500;
+  }
+
+  openAccordion(index: any) {
+    if (!this.mobileView) {
+      this.accordionIndex = index;
+    }
+  }
+
+  closeAccordion() {
+    if (!this.mobileView) {
+      this.accordionIndex = 5;
+    
+    }
   }
 
 }
