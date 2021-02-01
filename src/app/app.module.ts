@@ -13,6 +13,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccordionModule } from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ComingSoonPlaceholderComponent } from './coming-soon-placeholder/coming-soon-placeholder.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     TabnavComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    ComingSoonPlaceholderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AccordionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
