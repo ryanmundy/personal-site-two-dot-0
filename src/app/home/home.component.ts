@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   private options = {
     strings: ["Welcome to my page!",
       "I would like to personally thank you for taking the time to visit this page, designed and built by me.",
+      "I am currently a full-stack software engineer, specializing in front-end development",
       "Here you will find all kinds of information about me.",
       "If it's not here, feel free to message me or visit my LinkedIn profile below ↓"],
     typeSpeed: 75,

@@ -10,4 +10,8 @@
         -o-animation: fadein 1s; /* Opera < 12.1 */
         animation: fadein 1s;
     }
+
+  @media only screen and (max-width: 500px) {
+         width: 100%;
+    }
 }
