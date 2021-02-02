@@ -36,11 +36,11 @@ body {
 }    
 
 .tab-header {
-    height: 90px;
+    height: 60px;
 
-    @media only screen and (max-width: 500px) {
-        height: 70px;
-    }
+    // @media only screen and (max-width: 500px) {
+    //     height: 70px;
+    // }
 }
 
 
