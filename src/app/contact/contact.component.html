@@ -1,5 +1,8 @@
 <div class="contact-container">
     <img class="tab-header" src="../../assets/images/contact.png" />
 
-    <app-coming-soon-placeholder [text]="'Check back later for contact form. For now, feel free to contact me on LinkedIn.'"></app-coming-soon-placeholder>
+    <app-coming-soon-placeholder
+        [text]="'Check back later for contact form. For now, feel free to contact me on LinkedIn.'">
+    </app-coming-soon-placeholder>
+    <button (click)="submitContactForm()">send test</button>
 </div>
