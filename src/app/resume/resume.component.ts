@@ -8,7 +8,7 @@ import { AccordionModule } from 'primeng/accordion';
 })
 export class ResumeComponent implements OnInit {
 
-  accordionIndex = 5;
+  accordionIndex = 6;
   mobileView: boolean = false;
 
   constructor() { }
@@ -25,7 +25,7 @@ export class ResumeComponent implements OnInit {
 
   closeAccordion() {
     if (!this.mobileView) {
-      this.accordionIndex = 5;
+      this.accordionIndex = 6;
     
     }
   }
