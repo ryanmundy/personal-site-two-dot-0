@@ -1,7 +1,13 @@
-.portfolio-container{
-    text-align: center;
-    width: 63%;
-    padding: 10px;
+.carousel-img {
+    max-width: 75%;
+    max-height: 100%;
+}
+
+.portfolio-container {
+    color: #333333;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
 
     @media only screen and (min-width: 500px) {
         -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
@@ -11,7 +17,48 @@
         animation: fadein 1s;
     }
 
-  @media only screen and (max-width: 500px) {
-         width: 100%;
+    .portfolio-sub-container {
+        text-align: center;
+        width: 63%;
+        padding: 10px;
+
+        @media only screen and (max-width: 500px) {
+            width: 100%;
+        }
+
+        .subheader {
+            padding: 1rem;
+            font-size: 32px;
+        }
+    }
+}
+
+.carousel-caption {
+    padding-top: 1rem;
+    color: #333333;
+    font-size: 17px;
+}
+
+.portfolio-subheader-container {
+    padding: 1rem 0 1rem 0;
+
+    .portfolio-subheader {
+        font-size: 22px;
+        padding: 1rem 0.5rem 1rem 0;
+        display: inline;
+        vertical-align: top;
+    }
+
+    .languages-used {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    .project-description {
+        padding: 1rem 20% 1rem 20%;
+
+        @media only screen and (max-width: 500px) {
+            padding: 1rem;
+        }
     }
 }

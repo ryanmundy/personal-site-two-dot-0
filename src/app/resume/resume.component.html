@@ -27,8 +27,14 @@
             </div>
 
             <p-accordion [activeIndex]="accordionIndex">
+                <p-accordionTab [transitionOptions]="'500ms'" header="Angular Developer, TDMK Digital (2021 - Present)"
+                    (mouseover)="openAccordion(0)" (mouseleave)="closeAccordion()">
+                    <ul>
+                        <li>Check back for details on this experience</li>
+                    </ul>
+                </p-accordionTab>
                 <p-accordionTab [transitionOptions]="'500ms'"
-                    header="Software Engineer, Design Interactive (2019 - Present)" (mouseover)="openAccordion(0)"
+                    header="Software Engineer, Design Interactive (2019 - 2021)" (mouseover)="openAccordion(1)"
                     (mouseleave)="closeAccordion()">
                     <ul>
                         <li>Experience working on full-stack web applications on a variety of projects in an an agile
@@ -43,7 +49,7 @@
                     </ul>
                 </p-accordionTab>
                 <p-accordionTab [transitionOptions]="'500ms'" header="Student, Prime Digital Academy (2018 - 2019)"
-                    (mouseover)="openAccordion(1)" (mouseleave)="closeAccordion()">
+                    (mouseover)="openAccordion(2)" (mouseleave)="closeAccordion()">
                     <ul>
                         <li>Experience working with both front-end and back-end development on a variety of web
                             application
@@ -58,7 +64,7 @@
                 </p-accordionTab>
                 <p-accordionTab [transitionOptions]="'500ms'"
                     header="Probation Officer, Ramsey County Community Corrections (2017 - 2018)"
-                    (mouseover)="openAccordion(2)" (mouseleave)="closeAccordion()">
+                    (mouseover)="openAccordion(3)" (mouseleave)="closeAccordion()">
                     <ul>
                         <li>Experience using evidence based practices to supervise a diverse caseload of male and female
                             clients involved with the
@@ -69,7 +75,7 @@
                 </p-accordionTab>
                 <p-accordionTab [transitionOptions]="'500ms'"
                     header="Correctional Officer II, Ramsey County Community Corrections (2014 - 2019)"
-                    (mouseover)="openAccordion(3)" (mouseleave)="closeAccordion()">
+                    (mouseover)="openAccordion(4)" (mouseleave)="closeAccordion()">
                     <ul>
                         <li>Experience supervising a diverse group of male and female clients serving time as a result
                             of
@@ -81,7 +87,7 @@
                     </ul>
                 </p-accordionTab>
                 <p-accordionTab [transitionOptions]="'500ms'" header="Shift Leader, Culver's (2008 - 2015)"
-                    (mouseover)="openAccordion(4)" (mouseleave)="closeAccordion()">
+                    (mouseover)="openAccordion(5)" (mouseleave)="closeAccordion()">
                     <ul>
                         <li>Experience as both a team member and a supervisor in a customer service setting</li>
                         <li>Experience interacting with a diverse staff and community</li>
